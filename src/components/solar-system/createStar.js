@@ -1,8 +1,8 @@
 
 const createStar = (
     BABYLON, name, diameter, 
-    textureName, emissiveColor = "#FF8000", glowLayerIntensity = 0.35, 
-    starLightIntensity = 0.7,
+    textureName, 
+    emissiveColor = "#FF8000", glowLayerIntensity = 0.35, starLightIntensity = 0.7,
     uScale = -1, vScale = -1
 ) =>{
 
