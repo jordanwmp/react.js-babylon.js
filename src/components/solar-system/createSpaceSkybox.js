@@ -8,15 +8,11 @@ import skybox_nz from '../../assets/solar-system-material/skybox/skybox_nz.jpg';
 
 const createSpaceSkybox = (BABYLON, scene, size) => {
 
-    var extensions = ["_px.jpg", "_py.jpg", "_pz.jpg", "_nx.jpg", "_ny.jpg", "_nz.jpg"];
-    var files = [skybox_px, skybox_py, skybox_pz, skybox_nx, skybox_ny, skybox_nz];
-    var texture = new BABYLON.CubeTexture("../../assets/solar-system-material/skybox/space", scene, extensions, true, 
+    let extensions = ["_px.jpg", "_py.jpg", "_pz.jpg", "_nx.jpg", "_ny.jpg", "_nz.jpg"];
+    //var files = [skybox_px, skybox_py, skybox_pz, skybox_nx, skybox_ny, skybox_nz];
+    let texture = new BABYLON.CubeTexture("../../assets/solar-system-material/skybox/space", scene, extensions, true, 
         [skybox_px, skybox_py, skybox_pz, skybox_nx, skybox_ny, skybox_nz]
     );
-
-    /*for (var i = 0; i < 6; i++) {
-        texture._textures[i] = new BABYLON.Texture(files[i], scene);
-    }*/
 
     const skybox = BABYLON.MeshBuilder.CreateBox("spaceSkyBox", { size: size })
     const skyboxMaterial = new BABYLON.StandardMaterial("spaceSkyboxMaterial")

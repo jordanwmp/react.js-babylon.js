@@ -1,30 +1,30 @@
 const SolarSystemInfo = {
     sun:{
-        diameter: 696.342,
+        diameter: 109,
     },
     mercury:{
-        diameter: 2.440,
+        diameter: 0.383,
     },
     venus:{
-        diameter: 6.052,
+        diameter: 0.949,
     },
     earth:{
-        diameter: 6.371,
+        diameter: 1,
     },
     mars:{
-        diameter: 3.390,
+        diameter: 0.532,
     },
     jupter:{
-        diameter: 69.911,
+        diameter: 11.21,
     },
     saturn:{
-        diameter: 58.232,
+        diameter: 9.45,
     },
     uranus:{
-        diameter: 25.362,
+        diameter: 4.01,
     },
     nepturne:{
-        diameter: 24.622,
+        diameter: 3.88,
     }
 }
 
