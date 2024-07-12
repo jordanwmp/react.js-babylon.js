@@ -17,15 +17,17 @@ const CreateScene = () => {
         camera.minZ = 3
         camera.attachControl(canvas, true);
 
-        const solarSystem = SolarSystem(BABYLON, scene)
-
 
         const defaultPipeline = new BABYLON.DefaultRenderingPipeline("default", true, scene, [scene.activeCamera]);
         defaultPipeline.samples = 2;
 
+        
         engine.runRenderLoop(() => {
             scene.render()
         })
+
+        const solarSystem = SolarSystem(BABYLON, scene)
+
 
         onResize(scene)
 

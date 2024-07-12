@@ -8,9 +8,9 @@ import skybox_nz from '../../assets/solar-system-material/skybox/skybox_nz.jpg';
 
 const createSpaceSkybox = (BABYLON, scene, size) => {
 
-    let extensions = ["_px.jpg", "_py.jpg", "_pz.jpg", "_nx.jpg", "_ny.jpg", "_nz.jpg"];
+    const extensions = ["_px.jpg", "_py.jpg", "_pz.jpg", "_nx.jpg", "_ny.jpg", "_nz.jpg"];
     //var files = [skybox_px, skybox_py, skybox_pz, skybox_nx, skybox_ny, skybox_nz];
-    let texture = new BABYLON.CubeTexture("../../assets/solar-system-material/skybox/space", scene, extensions, true, 
+    const texture = new BABYLON.CubeTexture("../../assets/solar-system-material/skybox/space", scene, extensions, true, 
         [skybox_px, skybox_py, skybox_pz, skybox_nx, skybox_ny, skybox_nz]
     );
 
