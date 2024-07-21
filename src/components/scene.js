@@ -17,16 +17,22 @@ const CreateScene = () => {
         camera.minZ = 3
         camera.attachControl(canvas, true);
 
+        // Crie uma luz ambiente
+        var light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
+
+        // Ajuste a intensidade da luz (opcional)
+        light.intensity = 0.7;
+
 
         const defaultPipeline = new BABYLON.DefaultRenderingPipeline("default", true, scene, [scene.activeCamera]);
         defaultPipeline.samples = 2;
 
-        
+
         engine.runRenderLoop(() => {
             scene.render()
         })
 
-        const solarSystem = SolarSystem(BABYLON, scene)
+        const solarSystem = SolarSystem(BABYLON, scene, camera)
 
 
         onResize(scene)
